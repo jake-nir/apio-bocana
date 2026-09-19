@@ -1,0 +1,25 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" role="img" aria-label="Placeholder - Salakot Silhouette">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B3D5C"/>
+      <stop offset="1" stop-color="#C45A3C"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFD166" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#FFD166" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#bg)"/>
+  <circle cx="192" cy="176" r="269" fill="url(#sun)"/>
+  <circle cx="192" cy="176" r="128" fill="#FFD166" opacity="0.9"/>
+  <circle cx="640" cy="128" r="80" fill="#FFFFFF" opacity="0.14"/>
+  <circle cx="704" cy="592" r="208" fill="#FFFFFF" opacity="0.05"/>
+  <path d="M0 640 C 160 720, 240 640, 400 720 S 640 672, 800 640 L 800 800 L 0 800 Z" fill="#FFFFFF" opacity="0.10"/>
+  <path d="M0 720 C 160 672, 240 720, 400 672 S 640 736, 800 720 L 800 800 L 0 800 Z" fill="#FFFFFF" opacity="0.06"/>
+  <text x="400" y="368" text-anchor="middle" font-family="Georgia, serif" font-size="40" font-weight="600" fill="#FFFFFF" opacity="0.95" letter-spacing="2">Salakot Silhouette</text>
+  <g transform="translate(20 720)">
+    <rect width="270" height="54" rx="27" fill="#07232F" opacity="0.62"/>
+    <text x="26" y="22" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="3" fill="#F4C770">BOCANA</text>
+    <text x="26" y="41" font-family="Arial, sans-serif" font-size="11" fill="#CFE8F2">Replace with official photo</text>
+  </g>
+</svg>

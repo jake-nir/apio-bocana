@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Photo Gallery â€” Barangay Bocana, Ilog Negros Occidental</title>
+
+  <meta name="description" content="Browse the photo gallery of Barangay Bocana in Ilog, Negros Occidental â€” festival, community, culture, nature, and people." >
+  <meta name="keywords" content="Bocana gallery, Barangay Bocana photos, Kisi-Kisi Festival, Ilog, Negros Occidental, Philippines" >
+  <link rel="canonical" href="gallery.html" >
+
+  <meta property="og:type" content="website" >
+  <meta property="og:title" content="Photo Gallery â€” Barangay Bocana" >
+  <meta property="og:description" content="A visual celebration of Barangay Bocana, Ilog, Negros Occidental." >
+  <meta property="og:image" content="assets/images/gallery-1.svg" >
+  <meta property="og:locale" content="en_PH" >
+
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" >
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet" >
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          },
+          colors: {
+            ocean: { 950: '#062033', 900: '#0b3d5c', 800: '#11445c', 700: '#145c6b' },
+            tropical: { 500: '#239a7d', 400: '#3fa675' },
+            teal: { 600: '#14705c' },
+            gold: { 400: '#f4c770', 500: '#f2b135', 600: '#d9982f' },
+            sunset: { 400: '#f2a65a', 500: '#e76f51' },
+            sand: { 50: '#fbf7ef', 100: '#f6f0e3', 200: '#ede2ce' }
+          }
+        }
+      }
+    };
+  </script>
+
+  <link rel="stylesheet" href="css/style.css" >
+</head>
+
+<body class="bg-sand-50 font-sans">
+
+  <!-- ================= NAVIGATION ================= -->
+  <header class="site-header">
+    <div class="container-x">
+      <div class="nav-inner">
+        <a href="index.html" class="brand" aria-label="Barangay Bocana â€” home">
+          <img src="assets/logos/bocana-logo.svg" alt="" class="brand__logo" width="48" height="48" >
+          <span class="brand__name">
+            Barangay Bocana
+            <span class="brand__sub">Ilog Â· Negros Occidental</span>
+          </span>
+        </a>
+
+        <nav aria-label="Primary navigation">
+          <ul class="nav-links">
+            <li><a href="index.html" data-nav-link>Home</a></li>
+            <li><a href="about.html" data-nav-link>About</a></li>
+            <li><a href="festival.html" data-nav-link>Kisi-Kisi Festival</a></li>
+            <li><a href="attractions.html" data-nav-link>Explore</a></li>
+            <li><a href="community.html" data-nav-link>Community</a></li>
+            <li><a href="leadership.html" data-nav-link>Leadership</a></li>
+            <li><a href="gallery.html" data-nav-link>Gallery</a></li>
+            <li><a href="contact.html" data-nav-link>Contact</a></li>
+          </ul>
+        </nav>
+
+        <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="nav-toggle__line"></span>
+          <span class="nav-toggle__line"></span>
+          <span class="nav-toggle__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" inert>
+    <nav aria-label="Mobile navigation">
+      <ul>
+        <li><a href="index.html" data-nav-link>Home</a></li>
+        <li><a href="about.html" data-nav-link>About</a></li>
+        <li><a href="festival.html" data-nav-link>Kisi-Kisi Festival</a></li>
+        <li><a href="attractions.html" data-nav-link>Explore</a></li>
+        <li><a href="community.html" data-nav-link>Community</a></li>
+        <li><a href="leadership.html" data-nav-link>Leadership</a></li>
+        <li><a href="gallery.html" data-nav-link>Gallery</a></li>
+        <li><a href="contact.html" data-nav-link>Contact</a></li>
+      </ul>
+    </nav>
+    <p class="mobile-menu__foot">Barangay Bocana Â· Ilog, Negros Occidental Â· Philippines</p>
+  </div>
+
+  <main id="main">
+
+    <!-- ================= PAGE HERO ================= -->
+    <section class="page-hero">
+      <!-- Replace with official Barangay Bocana photo -->
+      <img class="page-hero__bg" src="assets/images/gallery-2.svg" alt="Placeholder â€” Barangay Bocana photo gallery" >
+      <div class="page-hero__overlay"></div>
+      <div class="container-x page-hero__inner">
+        <div class="max-w-3xl">
+          <p class="eyebrow eyebrow--light hero-anim hero-anim--1">Photo Gallery</p>
+          <h1 class="hero-anim hero-anim--2 mt-4 font-display text-5xl font-extrabold leading-[1.05] md:text-7xl">
+            Moments of <span class="text-gold-400">Bocana</span>
+          </h1>
+          <p class="hero-anim hero-anim--3 mt-5 max-w-xl text-lg text-white/85 leading-relaxed">
+            A visual journey through festival, community, culture, nature, and people.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GALLERY ================= -->
+    <section class="section-pad" id="gallery">
+      <div class="container-x">
+        <div class="reveal" data-reveal>
+          <div class="flex flex-wrap items-center gap-3" role="group" aria-label="Filter gallery by category">
+            <button type="button" class="filter-pill is-active" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="filter-pill" data-filter="festival" aria-pressed="false">Festival</button>
+            <button type="button" class="filter-pill" data-filter="community" aria-pressed="false">Community</button>
+            <button type="button" class="filter-pill" data-filter="culture" aria-pressed="false">Culture</button>
+            <button type="button" class="filter-pill" data-filter="nature" aria-pressed="false">Nature</button>
+            <button type="button" class="filter-pill" data-filter="people" aria-pressed="false">People</button>
+          </div>
+        </div>
+
+        <div class="gallery-grid mt-8">
+          <!-- Replace with official Barangay Bocana photo -->
+          <a class="gallery-item" data-category="festival" data-title="Kisi-Kisi Festival in Full Color" data-cat="Festival" tabindex="0">
+            <img src="assets/images/gallery-1.svg" alt="Placeholder â€” Kisi-Kisi Festival festivities" >
+            <span class="gallery-item__zoom"><i data-lucide="zoom-in"></i></span>
+            <span class="gallery-item__overlay"><span class="gallery-item__title">Festival in Color</span></span>
+          </a>
+          <!-- Replace with official Barangay Bocana photo -->
+          <a class="gallery-item gallery-item--short" data-category="culture" data-title="Cultural Details of the Celebration" data-cat="Culture" tabindex="0">
+            <img src="assets/images/gallery-2.svg" alt="Placeholder â€” cultural details during the festival" >
+            <span class="gallery-item__zoom"><i data-lucide="zoom-in"></i></span>
+            <span class="gallery-item__overlay"><span class="gallery-item__title">Cultural Details</span></span>
+          </a>
+          <!-- Replace with official Barangay Bocana photo -->
+          <a class="gallery-item gallery-item--tall" data-category="nature" data-title="Coastal Views Around Bocana" data-cat="Nature" tabindex="0">
+            <img src="assets/images/gallery-3.svg" alt="Placeholder â€” coastal views of Barangay Bocana" >
+            <span class="gallery-item__zoom"><i data-lucide="zoom-in"></i></span>
+            <span class="gallery-item__overlay"><span class="gallery-item__title">Coastal Views</span></span>
+          </a>
+          <!-- Replace with official Barangay Bocana photo -->
+          <a class="gallery-item" data-category="community" data-title="Community Moments" data-cat="Community" tabindex="0">
+            <img src="assets/images/gallery-4.svg" alt="Placeholder â€” community moments in Bocana" >
+            <span class="gallery-item__zoom"><i data-lucide="zoom-in"></i></span>
+            <span class="gallery-item__overlay"><span class="gallery-item__title">Community Moments</span></span>
+          </a>
+          <!-- Replace with official Barangay Bocana photo -->
+          <a class="gallery-item" data-category="nature" data-title="Nature and Greenery" data-cat="Nature" tabindex="0">
+            <img src="assets/images/gallery-5.svg" alt="Placeholder â€” nature and greenery around Bocana" >
+            <span class="gallery-item__zoom"><i data-lucide="zoom-in"></i></span>
+            <span class="gallery-item__overlay"><span class="gallery-item__title">Nature Walk</span></span>
+          </a>
+          <!-- Replace with official Barangay Bocana photo -->
+          <a class="gallery-item gallery-item--tall" data-category="people" data-title="People of Barangay Bocana" data-cat="People" tabindex="0">
+            <img src="assets/images/gallery-6.svg" alt="Placeholder â€” people of Barangay Bocana" >
+            <span class="gallery-item__zoom"><i data-lucide="zoom-in"></i></span>
+            <span class="gallery-item__overlay"><span class="gallery-item__title">People &amp; Pride</span></span>
+          </a>
+          <!-- Replace with official Barangay Bocana photo -->
+          <a class="gallery-item gallery-item--short" data-category="culture" data-title="Textures and Traditions" data-cat="Culture" tabindex="0">
+            <img src="assets/images/gallery-7.svg" alt="Placeholder â€” textures and traditions in Bocana" >
+            <span class="gallery-item__zoom"><i data-lucide="zoom-in"></i></span>
+            <span class="gallery-item__overlay"><span class="gallery-item__title">Traditions in Detail</span></span>
+          </a>
+          <!-- Replace with official Barangay Bocana photo -->
+          <a class="gallery-item" data-category="festival" data-title="Festival Silhouettes" data-cat="Festival" tabindex="0">
+            <img src="assets/images/gallery-8.svg" alt="Placeholder â€” festival silhouettes" >
+            <span class="gallery-item__zoom"><i data-lucide="zoom-in"></i></span>
+            <span class="gallery-item__overlay"><span class="gallery-item__title">Festival Silhouette</span></span>
+          </a>
+          <!-- Replace with official Barangay Bocana photo -->
+          <a class="gallery-item" data-category="community" data-title="Community Life Around the Barangay" data-cat="Community" tabindex="0">
+            <img src="assets/images/gallery-7.svg" alt="Placeholder â€” community life around the barangay" >
+            <span class="gallery-item__zoom"><i data-lucide="zoom-in"></i></span>
+            <span class="gallery-item__overlay"><span class="gallery-item__title">Daily Community Life</span></span>
+          </a>
+          <!-- Replace with official Barangay Bocana photo -->
+          <a class="gallery-item" data-category="festival" data-title="Celebration in the Streets" data-cat="Festival" tabindex="0">
+            <img src="assets/images/gallery-8.svg" alt="Placeholder â€” street celebration during the festival" >
+            <span class="gallery-item__zoom"><i data-lucide="zoom-in"></i></span>
+            <span class="gallery-item__overlay"><span class="gallery-item__title">Street Celebration</span></span>
+          </a>
+        </div>
+
+        <div class="info-note mt-10 reveal" data-reveal>
+          <i data-lucide="camera"></i>
+          <p>The photos above are placeholders. Official Barangay Bocana photographs will replace them in the
+          <code class="font-mono text-xs">assets/images/</code> folder. Every image includes an <code class="font-mono text-xs">alt</code>
+          description and a code comment marking where the official photo should go.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container-x py-16">
+      <div class="grid gap-12 lg:grid-cols-4">
+        <div>
+          <a href="index.html" class="brand">
+            <img src="assets/logos/bocana-logo.svg" alt="" class="brand__logo" width="48" height="48" >
+            <span class="brand__name">
+              Barangay Bocana
+              <span class="brand__sub">Ilog Â· Negros Occidental</span>
+            </span>
+          </a>
+          <p class="mt-5 max-w-xs text-sm leading-relaxed text-white/60">
+            Ilog, Negros Occidental, Philippines. A community known for culture, community spirit, and the
+            Kisi-Kisi Festival.
+          </p>
+          <div class="mt-6 flex gap-3">
+            <a href="#" class="social-btn" aria-label="Facebook (placeholder)">
+              <i data-lucide="facebook"></i>
+            </a>
+            <a href="#" class="social-btn" aria-label="Instagram (placeholder)">
+              <i data-lucide="instagram"></i>
+            </a>
+            <a href="#" class="social-btn" aria-label="YouTube (placeholder)">
+              <i data-lucide="youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <nav aria-label="Footer quick links">
+          <h3 class="site-footer__heading">Quick Links</h3>
+          <ul class="mt-5 space-y-3 text-sm">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="festival.html">Festival</a></li>
+            <li><a href="attractions.html">Explore</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Footer more links">
+          <h3 class="site-footer__heading">Discover More</h3>
+          <ul class="mt-5 space-y-3 text-sm">
+            <li><a href="community.html">Life in Bocana</a></li>
+            <li><a href="leadership.html">Barangay Leadership</a></li>
+            <li><a href="festival.html">Kisi-Kisi Festival</a></li>
+            <li><a href="attractions.html">Explore Bocana</a></li>
+            <li><a href="gallery.html#gallery">Photo Gallery</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h3 class="site-footer__heading">Barangay Hall</h3>
+          <p class="mt-5 text-sm leading-relaxed text-white/70">
+            Barangay Bocana<br >
+            Ilog, Negros Occidental<br >
+            Philippines
+          </p>
+          <p class="mt-4 text-sm text-white/60">
+            Contact Number: <span class="text-white/40">[Add official contact number]</span><br >
+            Email: <span class="text-white/40">[Add official email]</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-14 border-t border-white/10 pt-7 flex flex-col items-center justify-between gap-4 md:flex-row">
+        <p class="text-sm text-white/60">Â© <span id="footer-year">2026</span> Barangay Bocana. All rights reserved.</p>
+        <p class="text-xs uppercase tracking-[0.2em] text-white/40">Website Portfolio Concept</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image lightbox" inert>
+    <button type="button" class="lightbox__btn lightbox__close" aria-label="Close lightbox">
+      <i data-lucide="x"></i>
+    </button>
+    <button type="button" class="lightbox__btn lightbox__prev" aria-label="Previous image">
+      <i data-lucide="chevron-left"></i>
+    </button>
+    <button type="button" class="lightbox__btn lightbox__next" aria-label="Next image">
+      <i data-lucide="chevron-right"></i>
+    </button>
+    <figure class="lightbox__frame">
+      <img class="lightbox__img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" >
+      <figcaption class="lightbox__caption">
+        <span>
+          <span class="lightbox__caption-title block"></span>
+          <span class="lightbox__caption-sub block"></span>
+        </span>
+        <span class="lightbox__counter text-xs font-semibold tracking-wider text-ocean-900/50"></span>
+      </figcaption>
+    </figure>
+  </div>
+
+  <button type="button" class="to-top" aria-label="Back to top">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

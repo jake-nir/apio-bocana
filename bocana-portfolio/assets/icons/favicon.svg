@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 120 120" role="img" aria-label="Barangay Bocana favicon">
+  <defs>
+    <linearGradient id="lg-ocean" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B3D5C"/>
+      <stop offset="1" stop-color="#1E7A74"/>
+    </linearGradient>
+    <linearGradient id="lg-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F4C770"/>
+      <stop offset="1" stop-color="#D9982F"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="58" fill="#FFFFFF"/>
+  <circle cx="60" cy="60" r="56" fill="url(#lg-ocean)"/>
+  <circle cx="60" cy="60" r="46" fill="none" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="1.5"/>
+  <circle cx="60" cy="46" r="15" fill="url(#lg-gold)"/>
+  <circle cx="60" cy="46" r="20" fill="none" stroke="#F4C770" stroke-opacity="0.35" stroke-width="3"/>
+  <path d="M20 72 C 33 62, 47 62, 60 72 S 87 82, 100 72" fill="none" stroke="#F4C770" stroke-opacity="0.7" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M20 82 C 33 74, 47 74, 60 82 S 87 90, 100 82" fill="none" stroke="#FFFFFF" stroke-opacity="0.85" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M20 92 C 33 85, 47 85, 60 92 S 87 99, 100 92 L 100 102 L 20 102 Z" fill="#FFFFFF" fill-opacity="0.28"/>
+</svg>

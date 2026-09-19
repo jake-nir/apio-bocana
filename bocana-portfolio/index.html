@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Barangay Bocana — Ilog, Negros Occidental</title>
+
+  <meta name="description" content="Discover Barangay Bocana in Ilog, Negros Occidental — a community known for its culture, community spirit, and Kisi-Kisi Festival." >
+  <meta name="keywords" content="Barangay Bocana, Bocana, Ilog, Negros Occidental, Kisi-Kisi Festival, Philippines, Western Visayas" >
+  <meta name="author" content="Barangay Bocana, Ilog, Negros Occidental" >
+  <link rel="canonical" href="index.html" >
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" >
+  <meta property="og:title" content="Barangay Bocana — Ilog, Negros Occidental" >
+  <meta property="og:description" content="Discover Barangay Bocana in Ilog, Negros Occidental — a community known for its culture, community spirit, and Kisi-Kisi Festival." >
+  <meta property="og:image" content="assets/images/hero-bocana.svg" >
+  <meta property="og:locale" content="en_PH" >
+
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" >
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" >
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet" >
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          },
+          colors: {
+            ocean: { 950: '#062033', 900: '#0b3d5c', 800: '#11445c', 700: '#145c6b' },
+            tropical: { 500: '#239a7d', 400: '#3fa675' },
+            teal: { 600: '#14705c' },
+            gold: { 400: '#f4c770', 500: '#f2b135', 600: '#d9982f' },
+            sunset: { 400: '#f2a65a', 500: '#e76f51' },
+            sand: { 50: '#fbf7ef', 100: '#f6f0e3', 200: '#ede2ce' }
+          }
+        }
+      }
+    };
+  </script>
+
+  <link rel="stylesheet" href="css/style.css" >
+</head>
+
+<body class="bg-sand-50 font-sans">
+
+  <!-- ================= NAVIGATION ================= -->
+  <header class="site-header">
+    <div class="container-x">
+      <div class="nav-inner">
+        <a href="index.html" class="brand" aria-label="Barangay Bocana — home">
+          <img src="assets/logos/bocana-logo.svg" alt="" class="brand__logo" width="48" height="48" >
+          <span class="brand__name">
+            Barangay Bocana
+            <span class="brand__sub">Ilog · Negros Occidental</span>
+          </span>
+        </a>
+
+        <nav aria-label="Primary navigation">
+          <ul class="nav-links">
+            <li><a href="index.html" data-nav-link>Home</a></li>
+            <li><a href="about.html" data-nav-link>About</a></li>
+            <li><a href="festival.html" data-nav-link>Kisi-Kisi Festival</a></li>
+            <li><a href="attractions.html" data-nav-link>Explore</a></li>
+            <li><a href="community.html" data-nav-link>Community</a></li>
+            <li><a href="leadership.html" data-nav-link>Leadership</a></li>
+            <li><a href="gallery.html" data-nav-link>Gallery</a></li>
+            <li><a href="contact.html" data-nav-link>Contact</a></li>
+          </ul>
+        </nav>
+
+        <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="nav-toggle__line"></span>
+          <span class="nav-toggle__line"></span>
+          <span class="nav-toggle__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" inert>
+    <nav aria-label="Mobile navigation">
+      <ul>
+        <li><a href="index.html" data-nav-link>Home</a></li>
+        <li><a href="about.html" data-nav-link>About</a></li>
+        <li><a href="festival.html" data-nav-link>Kisi-Kisi Festival</a></li>
+        <li><a href="attractions.html" data-nav-link>Explore</a></li>
+        <li><a href="community.html" data-nav-link>Community</a></li>
+        <li><a href="leadership.html" data-nav-link>Leadership</a></li>
+        <li><a href="gallery.html" data-nav-link>Gallery</a></li>
+        <li><a href="contact.html" data-nav-link>Contact</a></li>
+      </ul>
+    </nav>
+    <p class="mobile-menu__foot">Barangay Bocana · Ilog, Negros Occidental · Philippines</p>
+  </div>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" aria-label="Barangay Bocana — welcome">
+      <!-- Replace with official Barangay Bocana photo -->
+      <img class="hero__bg" src="assets/images/hero-bocana.svg"
+           alt="Scenic placeholder of Barangay Bocana bay and community — replace with an official photo" >
+      <div class="hero__overlay"></div>
+
+      <div class="container-x hero__content">
+        <div class="max-w-4xl">
+          <p class="eyebrow hero-anim hero-anim--1 text-gold-400">Barangay · Ilog · Negros Occidental · Philippines</p>
+          <h1 class="hero-anim hero-anim--2 mt-5 font-display font-extrabold text-white leading-[1.05] text-[clamp(3rem,9vw,6.5rem)] tracking-[0.04em]">
+            BARANGAY<br >BOCANA
+          </h1>
+          <p class="hero-anim hero-anim--3 mt-6 max-w-xl text-lg text-white/85 md:text-xl leading-relaxed">
+            Where culture, community, and celebration meet on the shores of Ilog.
+          </p>
+          <div class="hero-anim hero-anim--4 mt-9 flex flex-wrap gap-4">
+            <a href="attractions.html" class="btn btn--gold">
+              Explore Bocana <i data-lucide="compass"></i>
+            </a>
+            <a href="festival.html" class="btn btn--outline-light">
+              Discover Kisi-Kisi Festival <i data-lucide="party-popper"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Animated wave -->
+      <div class="hero__wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#f6f0e3" fill-opacity="0.55" d="M0 64 C120 30 240 100 360 66 S600 26 720 62 S960 102 1080 66 S1320 30 1440 62 L1440 120 L0 120 Z"/>
+          <path fill="#fbf7ef" d="M0 88 C140 58 280 118 420 86 S700 52 880 84 S1180 116 1440 80 L1440 120 L0 120 Z"/>
+        </svg>
+      </div>
+
+      <a href="#welcome" class="hero-anim hero-anim--5 absolute left-1/2 bottom-8 z-20 -translate-x-1/2 flex flex-col items-center gap-1 text-white/75 hover:text-white transition-colors" aria-label="Scroll to welcome section">
+        <span class="text-[0.7rem] uppercase tracking-[0.25em]">Scroll</span>
+        <i data-lucide="chevron-down" class="animate-bounce"></i>
+      </a>
+    </section>
+
+    <!-- ================= WELCOME ================= -->
+    <section class="section-pad relative" id="welcome">
+      <div class="container-x">
+        <div class="grid items-center gap-12 lg:grid-cols-2">
+          <div class="relative reveal reveal--left" data-reveal>
+            <!-- Replace with official Barangay Bocana photo -->
+            <img src="assets/images/bocana-community.svg" alt="Placeholder — community life in Barangay Bocana"
+                 class="frame-slant aspect-[4/3] w-full object-cover" >
+            <div class="deco-ring -top-6 -left-6 h-28 w-28 hidden md:block"></div>
+            <div class="absolute -bottom-6 -right-4 glass rounded-2xl px-5 py-4 text-white shadow-lg">
+              <p class="font-display text-2xl font-bold text-gold-400">Kisi-Kisi</p>
+              <p class="text-xs uppercase tracking-[0.2em] text-white/80">Festival</p>
+            </div>
+          </div>
+
+          <div class="reveal reveal--right" data-reveal>
+            <p class="eyebrow">Welcome to Bocana</p>
+            <h2 class="text-balance mt-4 font-display text-4xl font-bold leading-tight text-ocean-950 md:text-5xl">
+              A coastal community with a warm heart and a colorful spirit
+            </h2>
+            <p class="lead mt-6">
+              Barangay Bocana is a community in <strong>Ilog, Negros Occidental</strong> — part of the
+              Western Visayas region of the Philippines. It is known for its local culture, strong
+              community spirit, and the <strong>Kisi-Kisi Festival</strong>, a celebration of the
+              barangay's identity and its people.
+            </p>
+            <p class="lead mt-4">
+              From quiet coastal life to festive gatherings of music, food, and color, Bocana invites you
+              to experience a slice of authentic Visayan community living.
+            </p>
+            <ul class="mt-7 grid gap-3 sm:grid-cols-2">
+              <li class="flex items-center gap-3 rounded-xl bg-white px-4 py-3 shadow-sm">
+                <i data-lucide="waves" class="h-5 w-5 text-tropical-500"></i>
+                <span class="text-sm font-semibold text-ocean-950">Coastal atmosphere</span>
+              </li>
+              <li class="flex items-center gap-3 rounded-xl bg-white px-4 py-3 shadow-sm">
+                <i data-lucide="users" class="h-5 w-5 text-tropical-500"></i>
+                <span class="text-sm font-semibold text-ocean-950">Strong community ties</span>
+              </li>
+              <li class="flex items-center gap-3 rounded-xl bg-white px-4 py-3 shadow-sm">
+                <i data-lucide="music" class="h-5 w-5 text-tropical-500"></i>
+                <span class="text-sm font-semibold text-ocean-950">Music &amp; celebration</span>
+              </li>
+              <li class="flex items-center gap-3 rounded-xl bg-white px-4 py-3 shadow-sm">
+                <i data-lucide="sun" class="h-5 w-5 text-tropical-500"></i>
+                <span class="text-sm font-semibold text-ocean-950">Local pride</span>
+              </li>
+            </ul>
+            <a href="about.html" class="btn btn--ocean mt-9">
+              Learn More About Bocana <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= AT A GLANCE ================= -->
+    <section class="section-pad bg-ocean-950 relative overflow-hidden text-white" aria-label="Bocana at a glance">
+      <div class="absolute -top-32 -right-24 h-96 w-96 rounded-full bg-ocean-700/40 blur-3xl" aria-hidden="true"></div>
+      <div class="absolute -bottom-32 -left-24 h-96 w-96 rounded-full bg-tropical-500/20 blur-3xl" aria-hidden="true"></div>
+
+      <div class="container-x relative">
+        <div class="max-w-2xl reveal" data-reveal>
+          <p class="eyebrow eyebrow--light">Bocana at a Glance</p>
+          <h2 class="mt-4 font-display text-4xl font-bold leading-tight md:text-5xl">A proud part of the Ilog community</h2>
+        </div>
+
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="stat-card glass reveal" data-reveal data-delay="0">
+            <span class="stat-card__icon"><i data-lucide="map-pin"></i></span>
+            <p class="text-[0.7rem] uppercase tracking-[0.25em] text-white/60">Location</p>
+            <p class="mt-2 font-display text-2xl font-bold text-gold-400">Ilog, Negros Occidental</p>
+          </div>
+          <div class="stat-card glass reveal" data-reveal data-delay="100">
+            <span class="stat-card__icon"><i data-lucide="landmark"></i></span>
+            <p class="text-[0.7rem] uppercase tracking-[0.25em] text-white/60">Region</p>
+            <p class="mt-2 font-display text-2xl font-bold text-gold-400">Western Visayas</p>
+          </div>
+          <div class="stat-card glass reveal" data-reveal data-delay="200">
+            <span class="stat-card__icon"><i data-lucide="globe"></i></span>
+            <p class="text-[0.7rem] uppercase tracking-[0.25em] text-white/60">Country</p>
+            <p class="mt-2 font-display text-2xl font-bold text-gold-400">Philippines</p>
+          </div>
+          <div class="stat-card glass reveal" data-reveal data-delay="300">
+            <span class="stat-card__icon"><i data-lucide="party-popper"></i></span>
+            <p class="text-[0.7rem] uppercase tracking-[0.25em] text-white/60">Festival</p>
+            <p class="mt-2 font-display text-2xl font-bold text-gold-400">Kisi-Kisi Festival</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COUNTERS ================= -->
+    <section class="py-16 bg-sand-100" aria-label="Bocana website highlights">
+      <div class="container-x">
+        <div class="grid gap-8 text-center sm:grid-cols-2 lg:grid-cols-4">
+          <div class="reveal" data-reveal>
+            <p class="font-display text-5xl font-extrabold text-ocean-900"><span data-counter data-count="6">0</span></p>
+            <p class="mt-2 text-sm font-semibold uppercase tracking-[0.18em] text-ocean-700">Festival highlights</p>
+          </div>
+          <div class="reveal" data-reveal data-delay="100">
+            <p class="font-display text-5xl font-extrabold text-ocean-900"><span data-counter data-count="8">0</span></p>
+            <p class="mt-2 text-sm font-semibold uppercase tracking-[0.18em] text-ocean-700">Community focus areas</p>
+          </div>
+          <div class="reveal" data-reveal data-delay="200">
+            <p class="font-display text-5xl font-extrabold text-ocean-900"><span data-counter data-count="5">0</span></p>
+            <p class="mt-2 text-sm font-semibold uppercase tracking-[0.18em] text-ocean-700">Gallery collections</p>
+          </div>
+          <div class="reveal" data-reveal data-delay="300">
+            <p class="font-display text-5xl font-extrabold text-ocean-900"><span data-counter data-count="6">0</span></p>
+            <p class="mt-2 text-sm font-semibold uppercase tracking-[0.18em] text-ocean-700">Ways to explore</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FESTIVAL FEATURE ================= -->
+    <section class="section-pad relative overflow-hidden" id="festival-preview">
+      <div class="deco-ring top-24 right-[-7rem] h-72 w-72" aria-hidden="true"></div>
+      <div class="container-x">
+        <div class="grid items-center gap-12 lg:grid-cols-2">
+          <div class="order-2 lg:order-1 reveal reveal--left" data-reveal>
+            <p class="eyebrow">Kisi-Kisi Festival</p>
+            <h2 class="text-balance mt-4 font-display text-4xl font-bold leading-tight text-ocean-950 md:text-5xl">
+              Celebrating the culture and spirit of Bocana
+            </h2>
+            <p class="lead mt-6">
+              The <strong>Kisi-Kisi Festival</strong> is the barangay's own celebration — a time when the
+              community comes together to honor its identity through performances, food, decorations,
+              and shared joy.
+            </p>
+            <!-- [Add official festival history and details here] -->
+            <div class="info-note mt-6">
+              <i data-lucide="info"></i>
+              <p>Official festival history, origin, and detailed meaning are still being gathered. This paragraph
+              is an editable placeholder for the verified Kisi-Kisi Festival story.</p>
+            </div>
+            <ul class="mt-7 grid gap-3 sm:grid-cols-2">
+              <li class="flex items-center gap-3 "><i data-lucide="sparkles" class="h-5 w-5 text-gold-600"></i><span class="text-sm font-semibold text-ocean-950">Performances &amp; street celebration</span></li>
+              <li class="flex items-center gap-3 "><i data-lucide="utensils" class="h-5 w-5 text-gold-600"></i><span class="text-sm font-semibold text-ocean-950">Local food &amp; community gatherings</span></li>
+              <li class="flex items-center gap-3 "><i data-lucide="users" class="h-5 w-5 text-gold-600"></i><span class="text-sm font-semibold text-ocean-950">Participation across the barangay</span></li>
+              <li class="flex items-center gap-3 "><i data-lucide="music" class="h-5 w-5 text-gold-600"></i><span class="text-sm font-semibold text-ocean-950">Music, dance &amp; decorations</span></li>
+            </ul>
+            <a href="festival.html" class="btn btn--gold mt-9">
+              Explore the Festival <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="order-1 lg:order-2 relative reveal reveal--right" data-reveal>
+            <!-- Replace with official Kisi-Kisi Festival photo -->
+            <img src="assets/images/kisi-kisi-1.svg" alt="Placeholder — Kisi-Kisi Festival celebration"
+                 class="frame-slant aspect-[4/3] w-full object-cover" >
+            <div class="absolute -top-5 -right-5 rounded-2xl bg-ocean-900 px-5 py-4 text-white shadow-xl">
+              <p class="font-display text-3xl font-bold text-gold-400">KISI-KISI</p>
+              <p class="text-[0.65rem] uppercase tracking-[0.25em] text-white/75">A celebration of home</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPLORE PREVIEW ================= -->
+    <section class="section-pad bg-sand-100">
+      <div class="container-x">
+        <div class="flex flex-wrap items-end justify-between gap-6">
+          <div class="max-w-2xl reveal" data-reveal>
+            <p class="eyebrow">Explore Bocana</p>
+            <h2 class="text-balance mt-4 font-display text-4xl font-bold leading-tight text-ocean-950 md:text-5xl">
+              Places, spaces, and moments worth discovering
+            </h2>
+          </div>
+          <a href="attractions.html" class="arrow-link reveal" data-reveal>
+            View all places <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="mt-12 grid gap-6 md:grid-cols-3">
+          <!-- Replace with official Boocana coastal photo -->
+          <a href="attractions.html" class="card card--image group reveal" data-reveal>
+            <div class="card__media aspect-[4/3]">
+              <img src="assets/images/bocana-coast.svg" alt="Placeholder — coastal area of Barangay Bocana" >
+              <span class="chip card__media-tag">Coastal</span>
+            </div>
+            <div class="card__body">
+              <h3 class="font-display text-xl font-bold text-ocean-950">Coastal Areas</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ocean-900/70">
+                The shoreline and riverbank where daily coastal life unfolds.
+              </p>
+              <span class="arrow-link mt-4">Discover More <i data-lucide="arrow-right"></i></span>
+            </div>
+          </a>
+
+          <!-- Replace with official Boocana nature photo -->
+          <a href="attractions.html" class="card card--image group reveal" data-reveal data-delay="100">
+            <div class="card__media aspect-[4/3]">
+              <img src="assets/images/bocana-nature.svg" alt="Placeholder — nature and greenery around Barangay Bocana" >
+              <span class="chip card__media-tag">Nature</span>
+            </div>
+            <div class="card__body">
+              <h3 class="font-display text-xl font-bold text-ocean-950">Nature &amp; Greenery</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ocean-900/70">
+                Fields, mangroves, and the lush provincial landscape of Ilog.
+              </p>
+              <span class="arrow-link mt-4">Discover More <i data-lucide="arrow-right"></i></span>
+            </div>
+          </a>
+
+          <!-- Replace with official Boocana community-space photo -->
+          <a href="attractions.html" class="card card--image group reveal" data-reveal data-delay="200">
+            <div class="card__media aspect-[4/3]">
+              <img src="assets/images/bocana-community.svg" alt="Placeholder — community spaces in Barangay Bocana" >
+              <span class="chip card__media-tag">Community</span>
+            </div>
+            <div class="card__body">
+              <h3 class="font-display text-xl font-bold text-ocean-950">Community Spaces</h3>
+              <p class="mt-2 text-sm leading-relaxed text-ocean-900/70">
+                Places where neighbors gather, celebrate, and build the barangay.
+              </p>
+              <span class="arrow-link mt-4">Discover More <i data-lucide="arrow-right"></i></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COMMUNITY PREVIEW ================= -->
+    <section class="section-pad relative overflow-hidden">
+      <div class="deco-ring bottom-24 left-[-7rem] h-64 w-64" aria-hidden="true"></div>
+      <div class="container-x relative">
+        <div class="max-w-3xl reveal" data-reveal>
+          <p class="eyebrow">Life in Bocana</p>
+          <h2 class="text-balance mt-4 font-display text-4xl font-bold leading-tight text-ocean-950 md:text-5xl">
+            A community that lives together, celebrates together
+          </h2>
+        </div>
+
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <a href="community.html" class="card p-7 reveal" data-reveal>
+            <span class="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-tropical-500/15 text-tropical-500"><i data-lucide="heart-handshake" class="h-7 w-7"></i></span>
+            <h3 class="mt-5 font-display text-xl font-bold text-ocean-950">Community</h3>
+            <p class="mt-2 text-sm leading-relaxed text-ocean-900/70">Bayanihan spirit and everyday cooperation among neighbors.</p>
+          </a>
+          <a href="community.html" class="card p-7 reveal" data-reveal data-delay="100">
+            <span class="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gold-500/15 text-gold-600"><i data-lucide="sparkles" class="h-7 w-7"></i></span>
+            <h3 class="mt-5 font-display text-xl font-bold text-ocean-950">Youth</h3>
+            <p class="mt-2 text-sm leading-relaxed text-ocean-900/70">Young people carrying the future of the barangay forward.</p>
+          </a>
+          <a href="community.html" class="card p-7 reveal" data-reveal data-delay="200">
+            <span class="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-sunset-500/15 text-sunset-500"><i data-lucide="music" class="h-7 w-7"></i></span>
+            <h3 class="mt-5 font-display text-xl font-bold text-ocean-950">Culture</h3>
+            <p class="mt-2 text-sm leading-relaxed text-ocean-900/70">Traditions, music, and stories shared across generations.</p>
+          </a>
+          <a href="community.html" class="card p-7 reveal" data-reveal data-delay="300">
+            <span class="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-ocean-900/10 text-ocean-900"><i data-lucide="calendar" class="h-7 w-7"></i></span>
+            <h3 class="mt-5 font-display text-xl font-bold text-ocean-950">Events</h3>
+            <p class="mt-2 text-sm leading-relaxed text-ocean-900/70">Festival days and gatherings that bring everyone together.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LEADERSHIP PREVIEW ================= -->
+    <section class="section-pad bg-ocean-950 relative overflow-hidden text-white" aria-label="Barangay leadership preview">
+      <div class="absolute -top-24 left-1/3 h-80 w-80 rounded-full bg-gold-500/10 blur-3xl" aria-hidden="true"></div>
+      <div class="container-x relative">
+        <div class="grid items-center gap-12 lg:grid-cols-2">
+          <div class="order-2 lg:order-1 reveal reveal--left" data-reveal>
+            <p class="eyebrow eyebrow--light">Barangay Leadership</p>
+            <h2 class="text-balance mt-4 font-display text-4xl font-bold leading-tight md:text-5xl">
+              Leadership rooted in community service
+            </h2>
+            <p class="mt-6 text-white/80 leading-relaxed">
+              Barangay Bocana is served by its barangay officials and is part of the Municipality of Ilog.
+              The municipal leadership is currently headed by <strong class="text-gold-400">Mayor Arnel Jun Apio</strong>.
+            </p>
+            <p class="mt-4 text-white/70 leading-relaxed text-sm">
+              Notes on the mayor's music: Mayor Arnel Jun Apio is also known for his involvement in music
+              and singing — <em>"Sawi sa Pag-ibig."</em>
+            </p>
+            <a href="leadership.html" class="btn btn--gold mt-8">
+              Meet the Leadership <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="order-1 lg:order-2 reveal reveal--right" data-reveal>
+            <!-- Replace with official leadership / mayor photo -->
+            <img src="assets/images/mayor.svg" alt="Placeholder — Barangay and municipal officials"
+                 class="frame-slant mx-auto aspect-[4/5] max-w-sm w-full object-cover" >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EVENTS PREVIEW ================= -->
+    <section class="section-pad bg-sand-100" id="events">
+      <div class="container-x">
+        <div class="flex flex-wrap items-end justify-between gap-6">
+          <div class="max-w-2xl reveal" data-reveal>
+            <p class="eyebrow">Upcoming Events</p>
+            <h2 class="text-balance mt-4 font-display text-4xl font-bold leading-tight text-ocean-950 md:text-5xl">
+              Mark your calendar
+            </h2>
+          </div>
+          <a href="community.html#events" class="arrow-link reveal" data-reveal>
+            View event updates <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="mt-12 grid gap-6 md:grid-cols-2">
+          <div class="event-card event-card--empty items-center p-8 text-center reveal" data-reveal>
+            <span class="inline-flex h-16 w-16 items-center justify-center rounded-full bg-white text-ocean-900 shadow-sm"><i data-lucide="calendar-x" class="h-8 w-8"></i></span>
+            <p class="mt-4 font-display text-xl font-bold text-ocean-950">No upcoming events have been published yet.</p>
+            <p class="mt-2 text-sm text-ocean-900/70 max-w-sm">
+              When the barangay announces official events and festival schedules, they will appear here.
+            </p>
+          </div>
+          <div class="event-card event-card--empty flex-col justify-center items-start p-8 reveal" data-reveal data-delay="100">
+            <p class="text-[0.7rem] uppercase tracking-[0.25em] text-gold-600">Past &amp; community events</p>
+            <p class="mt-3 font-display text-xl font-bold text-ocean-950">Kisi-Kisi Festival celebrations</p>
+            <p class="mt-2 text-sm text-ocean-900/70">
+              Festival events, community gatherings, and past highlights will be listed here as verified
+              information is published.
+            </p>
+            <!-- [Add verified event dates and details here] -->
+            <a href="contact.html" class="arrow-link mt-5">Share an event update <i data-lucide="arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FIND BOCANA ================= -->
+    <section class="section-pad relative overflow-hidden" id="find-bocana">
+      <div class="container-x">
+        <div class="grid items-center gap-12 lg:grid-cols-2">
+          <div class="reveal reveal--left" data-reveal>
+            <p class="eyebrow">Find Bocana</p>
+            <h2 class="text-balance mt-4 font-display text-4xl font-bold leading-tight text-ocean-950 md:text-5xl">
+              A barangay of the Municipality of Ilog
+            </h2>
+            <p class="lead mt-6">
+              Find us in Ilog, Negros Occidental, in the Western Visayas region of the Philippines.
+            </p>
+            <div class="info-note mt-6">
+              <i data-lucide="map"></i>
+              <p>Exact barangay coordinates are still being verified. An official Google Maps embed will be
+              placed here once confirmed. <strong>[Insert official Google Maps location here]</strong></p>
+            </div>
+            <a href="contact.html" class="btn btn--ocean mt-8">Get Directions Help <i data-lucide="arrow-right"></i></a>
+          </div>
+
+          <div class="reveal reveal--right" data-reveal>
+            <div class="frame-slant bg-ocean-950 relative flex aspect-[4/3] flex-col items-center justify-center text-center text-white">
+              <span class="inline-flex h-24 w-24 items-center justify-center rounded-full bg-gold-500/15 text-gold-400"><i data-lucide="map-pin" class="h-12 w-12"></i></span>
+              <p class="mt-6 font-display text-2xl font-bold">Barangay Bocana</p>
+              <p class="mt-1 text-white/70">Ilog, Negros Occidental, Philippines</p>
+              <p class="mt-4 rounded-full bg-white/10 px-4 py-1.5 text-xs tracking-wide text-gold-300">
+                [ Insert official Google Maps location ]
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="pb-24" aria-label="Call to action">
+      <div class="container-x reveal" data-reveal>
+        <div class="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-ocean-900 via-ocean-800 to-teal-600 px-6 py-16 text-center text-white md:px-16">
+          <div class="absolute -top-16 -right-10 h-64 w-64 rounded-full bg-gold-500/15 blur-3xl" aria-hidden="true"></div>
+          <div class="absolute -bottom-20 -left-10 h-64 w-64 rounded-full bg-tropical-500/20 blur-3xl" aria-hidden="true"></div>
+          <div class="relative">
+            <h2 class="text-balance mx-auto max-w-2xl font-display text-4xl font-bold leading-tight md:text-5xl">
+              Come visit, celebrate, and be part of the Bocana story
+            </h2>
+            <p class="mx-auto mt-5 max-w-xl text-white/80">
+              Whether you're a visitor, a researcher, or a neighbor — there's always a warm welcome in Barangay Bocana.
+            </p>
+            <div class="mt-9 flex flex-wrap justify-center gap-4">
+              <a href="contact.html" class="btn btn--gold">Contact the Barangay <i data-lucide="send"></i></a>
+              <a href="gallery.html" class="btn btn--outline-light">View the Gallery <i data-lucide="image"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container-x py-16">
+      <div class="grid gap-12 lg:grid-cols-4">
+        <div>
+          <a href="index.html" class="brand">
+            <img src="assets/logos/bocana-logo.svg" alt="" class="brand__logo" width="48" height="48" >
+            <span class="brand__name">
+              Barangay Bocana
+              <span class="brand__sub">Ilog · Negros Occidental</span>
+            </span>
+          </a>
+          <p class="mt-5 max-w-xs text-sm leading-relaxed text-white/60">
+            Ilog, Negros Occidental, Philippines. A community known for culture, community spirit, and the
+            Kisi-Kisi Festival.
+          </p>
+          <div class="mt-6 flex gap-3">
+            <a href="#" class="social-btn" aria-label="Facebook (placeholder)">
+              <i data-lucide="facebook"></i>
+            </a>
+            <a href="#" class="social-btn" aria-label="Instagram (placeholder)">
+              <i data-lucide="instagram"></i>
+            </a>
+            <a href="#" class="social-btn" aria-label="YouTube (placeholder)">
+              <i data-lucide="youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <nav aria-label="Footer quick links">
+          <h3 class="site-footer__heading">Quick Links</h3>
+          <ul class="mt-5 space-y-3 text-sm">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="festival.html">Festival</a></li>
+            <li><a href="attractions.html">Explore</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Footer more links">
+          <h3 class="site-footer__heading">Discover More</h3>
+          <ul class="mt-5 space-y-3 text-sm">
+            <li><a href="community.html">Life in Bocana</a></li>
+            <li><a href="leadership.html">Barangay Leadership</a></li>
+            <li><a href="festival.html">Kisi-Kisi Festival</a></li>
+            <li><a href="attractions.html">Explore Bocana</a></li>
+            <li><a href="gallery.html#gallery">Photo Gallery</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h3 class="site-footer__heading">Barangay Hall</h3>
+          <p class="mt-5 text-sm leading-relaxed text-white/70">
+            Barangay Bocana<br >
+            Ilog, Negros Occidental<br >
+            Philippines
+          </p>
+          <p class="mt-4 text-sm text-white/60">
+            Contact Number: <span class="text-white/40">[Add official contact number]</span><br >
+            Email: <span class="text-white/40">[Add official email]</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-14 border-t border-white/10 pt-7 flex flex-col items-center justify-between gap-4 md:flex-row">
+        <p class="text-sm text-white/60">© <span id="footer-year">2026</span> Barangay Bocana. All rights reserved.</p>
+        <p class="text-xs uppercase tracking-[0.2em] text-white/40">Website Portfolio Concept</p>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="to-top" aria-label="Back to top">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
