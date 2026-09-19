@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="820" viewBox="0 0 640 820" role="img" aria-label="Official photograph coming soon">
+  <defs>
+    <linearGradient id="bgPlh" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#082F4B"/>
+      <stop offset="1" stop-color="#145C6B"/>
+    </linearGradient>
+    <radialGradient id="sunPlh" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#F4C770" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#F4C770" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="framePlh" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#CFE8F2"/>
+      <stop offset="1" stop-color="#F4C770"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="820" fill="url(#bgPlh)"/>
+  <circle cx="154" cy="180" r="214" fill="url(#sunPlh)"/>
+  <circle cx="154" cy="180" r="102" fill="#F4C770" opacity="0.9"/>
+  <circle cx="512" cy="131" r="64" fill="#FFFFFF" opacity="0.14"/>
+  <circle cx="563" cy="607" r="166" fill="#FFFFFF" opacity="0.05"/>
+  <path d="M0 656 C 128 738, 192 656, 320 738 S 512 689, 640 656 L 640 820 L 0 820 Z" fill="#FFFFFF" opacity="0.10"/>
+  <path d="M0 738 C 128 689, 192 738, 320 689 S 512 754, 640 738 L 640 820 L 0 820 Z" fill="#FFFFFF" opacity="0.06"/>
+  <rect x="170" y="150" width="300" height="398" rx="18" fill="none" stroke="url(#framePlh)" stroke-width="3"/>
+  <g transform="translate(320 320)">
+    <circle cx="0" cy="-62" r="52" fill="#CFE8F2" opacity="0.85"/>
+    <path d="M -84 128 C -84 56, -34 26, 0 26 S 84 56, 84 128 Z" fill="#CFE8F2" opacity="0.85"/>
+  </g>
+  <text x="320" y="596" text-anchor="middle" font-family="Georgia, serif" font-size="30" font-weight="600" fill="#FFFFFF" letter-spacing="1">Official Portrait</text>
+  <text x="320" y="630" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#CFE8F2" letter-spacing="2">PHOTOGRAPH COMING SOON</text>
+  <g transform="translate(20 740)">
+    <rect width="270" height="54" rx="27" fill="#07232F" opacity="0.62"/>
+    <text x="26" y="22" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="3" fill="#F4C770">BOCANA</text>
+    <text x="26" y="41" font-family="Arial, sans-serif" font-size="11" fill="#CFE8F2">Representative placeholder</text>
+  </g>
+</svg>
