@@ -48,7 +48,20 @@
   </script>
 
   <link rel="stylesheet" href="css/style.css" >
-</head>
+<script>
+  /* Anti-FOUC theme init: runs before first paint so the dark palette
+     is applied immediately on reload. Same storage key as js/script.js. */
+  (function () {
+    var K = "apio-bocana-theme", t = null;
+    try { t = localStorage.getItem(K); } catch (e) {}
+    if (t !== "dark" && t !== "light") t = null;
+    if (!t && window.matchMedia) {
+      t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+    document.documentElement.setAttribute("data-theme", t || "light");
+  })();
+</script>
+  </head>
 
 <body class="bg-sand-50 font-sans">
 

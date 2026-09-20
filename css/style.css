@@ -1,5 +1,5 @@
-/* ==========================================================================
-   BARANGAY BOCANA — Portfolio & Tourism Website
+﻿/* ==========================================================================
+   BARANGAY BOCANA â€” Portfolio & Tourism Website
    Design system, components, animations
    ========================================================================== */
 
@@ -1139,4 +1139,148 @@ a {
   .hero__bg {
     animation: none;
   }
+}
+
+/* --------------------------------------------------------------------------
+   17. DARK MODE
+   Theme is driven by the `data-theme` attribute on <html>.
+   Added: the site relies on both CSS custom properties and Tailwind CDN
+   utilities baked into the markup, so this block flips the design tokens and
+   remaps the specific utility classes used across pages.
+   -------------------------------------------------------------------------- */
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --ocean-950: #071826;
+  --ocean-900: #0c2e44;
+  --ocean-800: #0f3a51;
+  --ocean-700: #145464;
+  --teal-600: #177054;
+  --tropical-500: #239a7d;
+  --tropical-400: #5bb894;
+  --gold-600: #e6ab4a;
+  --gold-500: #f2b135;
+  --gold-400: #f4c770;
+  --sunset-500: #e76f51;
+  --sunset-400: #f2a65a;
+  --sand-50: #0a2231;
+  --sand-100: #103043;
+  --sand-200: #173e54;
+  --ink: #e8f1f5;
+}
+
+html[data-theme="dark"] body {
+  background-color: var(--sand-50);
+  color: var(--ink);
+}
+
+/* -- dark: typography redraws -- */
+html[data-theme="dark"] .text-ocean-950,
+html[data-theme="dark"] .text-ocean-900,
+html[data-theme="dark"] .text-ocean-700,
+html[data-theme="dark"] .text-ocean-800 { color: var(--gold-50, #f4e9c9); }
+
+html[data-theme="dark"] .text-ocean-900\/50,
+html[data-theme="dark"] .text-ocean-900\/60,
+html[data-theme="dark"] .text-ocean-900\/70 {
+  color: rgba(232, 241, 245, 0.85);
+}
+
+html[data-theme="dark"] .text-gold-600 { color: var(--gold-400); }
+
+/* -- dark: surface remaps -- */
+html[data-theme="dark"] .bg-white,
+html[data-theme="dark"] .bg-white\/[0-9]+,
+html[data-theme="dark"] .bg-sand-100,
+html[data-theme="dark"] .bg-sand-200 { background-color: var(--sand-100); }
+
+html[data-theme="dark"] .bg-sand-50 { background-color: var(--sand-50); }
+
+html[data-theme="dark"] .bg-gold-500\/15,
+html[data-theme="dark"] .bg-gold-500\/10,
+html[data-theme="dark"] .bg-tropical-500\/15,
+html[data-theme="dark"] .bg-tropical-500\/20,
+html[data-theme="dark"] .bg-sunset-500\/15,
+html[data-theme="dark"] .bg-sunset-500\/20,
+html[data-theme="dark"] .bg-ocean-700\/40 { background-color: rgba(9, 34, 49, 0.75); }
+
+/* -- dark: borders -- */
+html[data-theme="dark"] .border-sand-200,
+html[data-theme="dark"] .border-sand-100 { border-color: var(--sand-200); }
+
+/* -- dark: link arrows need visible off-colour text --
+       (ocean-950 headings become gold so links remain legible) */
+
+/* --------------------------------------------------------------------------
+   18. REDUCED MOTION (theme toggle respects it via JS)
+   -------------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------------
+   18. THEME TOGGLE BUTTON (desktop icon + mobile row)
+   -------------------------------------------------------------------------- */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--sand-200);
+  border-radius: 0.5rem;
+  background: var(--sand-50);
+  color: var(--ocean-900);
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+.theme-toggle:hover { border-color: var(--gold-500); color: var(--ocean-950); }
+.theme-toggle:active { transform: scale(0.96); }
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--gold-500);
+  outline-offset: 2px;
+}
+.theme-toggle__icon {
+  width: 1.1rem;
+  height: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+/* lucide replaces the .icon-* <i> placeholders with <svg class="lucide lucide-*">,
+   so visibility is driven off the rendered svg classes (not the placeholders) */
+.theme-toggle .lucide-moon { display: none; }
+.theme-toggle .lucide-sun  { display: inline-flex; }
+html[data-theme="dark"] .theme-toggle .lucide-moon { display: inline-flex; }
+html[data-theme="dark"] .theme-toggle .lucide-sun  { display: none; }
+
+/* Toggle inside desktop nav (next to hamburger) */
+.nav-inner .theme-toggle {
+  margin-left: 0.25rem;
+  flex-shrink: 0;
+}
+
+/* Toggle inside the mobile drawer (full-width row under the links) */
+.mobile-menu .theme-toggle {
+  width: 100%;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+/* -- dark: remap toggle surfaces -- */
+html[data-theme="dark"] .theme-toggle {
+  background: var(--ocean-900);
+  border-color: rgba(255,255,255,0.12);
+  color: var(--sand-100);
+}
+html[data-theme="dark"] .theme-toggle:hover {
+  border-color: var(--gold-500);
+  color: #fff;
+}
+
+/* --------------------------------------------------------------------------
+   RESPECT REDUCED MOTION for the colour/transform transitions above
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .theme-toggle { transition: none; }
 }

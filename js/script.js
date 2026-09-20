@@ -1,5 +1,5 @@
-/* ==========================================================================
-   BARANGAY BOCANA — site scripts
+﻿/* ==========================================================================
+   BARANGAY BOCANA â€” site scripts
    Navigation, reveal, gallery, lightbox, counters, form, misc
    ========================================================================== */
 
@@ -71,7 +71,7 @@
   }
 
   // -------------------------------------------------------------------------
-  // Sticky navbar — shrink + shadow on scroll
+  // Sticky navbar â€” shrink + shadow on scroll
   // -------------------------------------------------------------------------
   const toTop = $(".to-top");
 
@@ -305,7 +305,7 @@
       loadLightbox();
     }
 
-    // delegate click — attaches to all gallery items (also works after filters)
+    // delegate click â€” attaches to all gallery items (also works after filters)
     document.addEventListener("click", function (e) {
       const item = e.target.closest(".gallery-item");
       if (!item || !lightbox) return;
@@ -381,7 +381,124 @@
     try {
       window.lucide.createIcons();
     } catch (err) {
-      /* icons are decorative — fail silently */
+      /* icons are decorative â€” fail silently */
     }
   }
+})();
+
+/* ===========================================================================
+   THEME (dark mode) â€” persistence + live toggle buttons
+   ---------------------------------------------------------------------------
+   The actual colour remap lives in css/style.css under html[data-theme="dark"];
+   this block only wires it up:
+     - drops a .theme-toggle button into the desktop header row and the mobile
+       drawer (they share the same markup, styled in style.css)
+     - toggles data-theme on <html>, persists the choice to localStorage
+     - on first visit / no stored value, falls back to the OS preference
+     - re-renders the freshly injected lucide icons
+   ------------------------------------------------------------------------- */
+(function () {
+  var STORAGE_KEY = "apio-bocana-theme";
+
+  function readStored() {
+    try {
+      var v = localStorage.getItem(STORAGE_KEY);
+      return v === "dark" || v === "light" ? v : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function systemPref() {
+    return window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light";
+  }
+
+  function currentTheme() {
+    return document.documentElement.getAttribute("data-theme") === "dark"
+      ? "dark"
+      : "light";
+  }
+
+  function apply(theme, persist) {
+    document.documentElement.setAttribute("data-theme", theme);
+    if (persist) {
+      try { localStorage.setItem(STORAGE_KEY, theme); } catch (e) {}
+    }
+    syncState();
+  }
+
+  function syncState() {
+    var dark = currentTheme() === "dark";
+    var toggles = document.querySelectorAll(".theme-toggle");
+    for (var i = 0; i < toggles.length; i++) {
+      toggles[i].setAttribute("aria-pressed", dark ? "true" : "false");
+      toggles[i].setAttribute(
+        "aria-label",
+        dark ? "Switch to light mode" : "Switch to dark mode"
+      );
+    }
+  }
+
+  function makeToggle() {
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "theme-toggle";
+    btn.setAttribute("aria-pressed", currentTheme() === "dark" ? "true" : "false");
+    btn.innerHTML =
+      '<i class="theme-toggle__icon icon-moon" aria-hidden="true" data-lucide="moon"></i>' +
+      '<i class="theme-toggle__icon icon-sun" aria-hidden="true" data-lucide="sun"></i>' +
+      '<span class="theme-toggle__label">Theme</span>';
+    return btn;
+  }
+
+  function mountToggle(anchor) {
+    var btn = makeToggle();
+    anchor.appendChild(btn);
+    btn.addEventListener("click", function () {
+      apply(currentTheme() === "dark" ? "light" : "dark", true);
+    });
+    return btn;
+  }
+
+  function init() {
+    /* dot not flash: the inline head snippet already set data-theme early;
+       re-apply here so the widget stays correct if it ran elsewhere */
+    apply(readStored() || systemPref(), false);
+
+    /* desktop: append to the header nav row (after hamburger) */
+    var desktop = document.querySelector(".nav-inner");
+    if (desktop) mountToggle(desktop);
+
+    /* mobile: prepend to the drawer so it sits above the links */
+    var mobile = document.querySelector(".mobile-menu");
+    if (mobile) {
+      var btn = makeToggle();
+      mobile.insertBefore(btn, mobile.firstChild);
+      btn.addEventListener("click", function () {
+        apply(currentTheme() === "dark" ? "light" : "dark", true);
+      });
+    }
+
+    /* honour OS preference changes unless the user chose explicitly */
+    if (window.matchMedia) {
+      var mq = window.matchMedia("(prefers-color-scheme: dark)");
+      var onChange = function (e) {
+        if (!readStored()) apply(e.matches ? "dark" : "light", false);
+      };
+      if (mq.addEventListener) mq.addEventListener("change", onChange);
+      else if (mq.addListener) mq.addListener(onChange);
+    }
+
+    syncState();
+
+    /* render the lucide icons we just injected */
+    if (window.lucide && typeof window.lucide.createIcons === "function") {
+      try { window.lucide.createIcons(); } catch (e) {}
+    }
+  }
+
+  init();
 })();
